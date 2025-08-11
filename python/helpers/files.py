@@ -259,7 +259,9 @@ def remove_code_fences(text):
 
 def is_full_json_template(text):
     # Pattern to match the entire text enclosed in ```json or ~~~json fences
-    pattern = r"^\s*(```|~~~)\s*json\s*\n(.*?)\n\1\s*$"
+    # The newline before the closing fence is optional to support inputs like
+    # "```json\n{"a": 1}```" which previously failed to match.
+    pattern = r"^\s*(```|~~~)\s*json\s*\n(.*?)\n?\1\s*$"
     # Use re.DOTALL to make '.' match newlines
     match = re.fullmatch(pattern, text.strip(), flags=re.DOTALL)
     return bool(match)
