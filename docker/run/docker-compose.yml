@@ -1,7 +1,7 @@
 services:
   Agent-261:
     container_name: Agent-261
-    image: agent0ai/Agent-261:latest
+    image: saminah/Agent-261:latest
     volumes:
       - ./Agent-261:/a0
     ports:
