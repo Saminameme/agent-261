@@ -9,30 +9,30 @@
 
 :root {
   /* Dark mode */
-  --color-background-dark: #131313;
-  --color-text-dark: #d4d4d4;
-  --color-primary-dark: #737a81;
-  --color-secondary-dark: #656565;
-  --color-accent-dark: #cf6679;
-  --color-message-bg-dark: #2d2d2d;
-  --color-message-text-dark: #e0e0e0;
-  --color-panel-dark: #171717;
-  --color-border-dark: #444444a8;
-  --color-input-dark: #131313;
-  --color-input-focus-dark: #101010;
+  --color-background-dark: #0a0a0a;
+  --color-text-dark: #f5f5f5;
+  --color-primary-dark: #ffd60a;
+  --color-secondary-dark: #262626;
+  --color-accent-dark: #ffea00;
+  --color-message-bg-dark: #1a1a1a;
+  --color-message-text-dark: #f5f5f5;
+  --color-panel-dark: #111111;
+  --color-border-dark: #333333;
+  --color-input-dark: #0f0f0f;
+  --color-input-focus-dark: #1a1a1a;
 
   /* Light mode */
-  --color-background-light: #dbdbdb;
-  --color-text-light: #333333;
-  --color-primary-light: #384653;
-  --color-secondary-light: #e8eaf6;
-  --color-accent-light: #b00020;
+  --color-background-light: #ffffff;
+  --color-text-light: #111111;
+  --color-primary-light: #ffea00;
+  --color-secondary-light: #f5f5f5;
+  --color-accent-light: #ffd60a;
   --color-message-bg-light: #ffffff;
-  --color-message-text-light: #333333;
-  --color-panel-light: #f0f0f0;
-  --color-border-light: #e0e0e0c7;
-  --color-input-light: #e4e4e4;
-  --color-input-focus-light: #dadada;
+  --color-message-text-light: #111111;
+  --color-panel-light: #f7f7f7;
+  --color-border-light: #e0e0e0;
+  --color-input-light: #f0f0f0;
+  --color-input-focus-light: #eaeaea;
 
   /* Default to dark mode */
   --color-background: var(--color-background-dark);
@@ -64,8 +64,8 @@
   --border-radius: 1.125rem;
   --transition-speed: 0.3s;
   --svg-filter: brightness(0) saturate(100%) var(--color-primary-filter);
-  --color-primary-filter: invert(73%) sepia(17%) saturate(360%)
-    hue-rotate(177deg) brightness(87%) contrast(85%);
+  --color-primary-filter: invert(86%) sepia(95%) saturate(448%)
+    hue-rotate(2deg) brightness(103%) contrast(101%);
 }
 
 /* Reset and Base Styles */
