@@ -51,7 +51,7 @@ The following user guide provides instructions for installing and running Agent 
 <br><br>
 
 > [!NOTE]
-> **MacOS Configuration:** In Docker Desktop's preferences (Docker menu) → Settings → 
+> **macOS Configuration:** In Docker Desktop's preferences (Docker menu) → Settings → 
 > Advanced, enable "Allow the default Docker socket to be used (requires password)."
 
 ![docker socket macOS](res/setup/macsocket.png)

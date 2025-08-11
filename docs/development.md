@@ -16,7 +16,7 @@ This guide will show you how to setup a local development environment for Agent 
 4. (optional) Git/GitHub
 
 > [!NOTE]
-> I will be using clean VS Code, Conda and Docker Desktop in this example on MacOS.
+> I will be using clean VS Code, Conda and Docker Desktop in this example on macOS.
 
 
 ## Step 0: Install required software
