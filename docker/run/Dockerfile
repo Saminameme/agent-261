@@ -1,6 +1,6 @@
 # Use the pre-built base image for A0
 # FROM Agent-261-base:local
-FROM saminah/Agent-261-base:latest
+FROM saminah/agent-261-base:latest
 
 # Check if the argument is provided, else throw an error
 ARG BRANCH
