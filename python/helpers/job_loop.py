@@ -18,8 +18,7 @@ async def run_loop():
 
     while True:
         if runtime.is_development():
-            # Signal to container that the job loop should be paused
-            # if we are runing a development instance to avoid duble-running the jobs
+            # When running in development mode, signal the container to pause the job loop to avoid double-running tasks
             try:
                 await runtime.call_development_function(pause_loop)
             except Exception as e:
@@ -31,7 +30,7 @@ async def run_loop():
                 await scheduler_tick()
             except Exception as e:
                 PrintStyle().error(errors.format_error(e))
-        await asyncio.sleep(SLEEP_TIME)  # TODO! - if we lower it under 1min, it can run a 5min job multiple times in it's target minute
+        await asyncio.sleep(SLEEP_TIME)  # TODO! - if we lower it under 1min, it can run a 5min job multiple times in its target minute
 
 
 async def scheduler_tick():
