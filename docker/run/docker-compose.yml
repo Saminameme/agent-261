@@ -1,8 +1,8 @@
 services:
-  agent-zero:
-    container_name: agent-zero
-    image: agent0ai/agent-zero:latest
+  Agent-261:
+    container_name: Agent-261
+    image: agent0ai/Agent-261:latest
     volumes:
-      - ./agent-zero:/a0
+      - ./Agent-261:/a0
     ports:
       - "50080:80"

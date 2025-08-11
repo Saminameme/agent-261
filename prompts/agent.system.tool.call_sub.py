@@ -24,7 +24,7 @@ class CallSubordinate(VariablesPlugin):
         if not profiles:
             # PrintStyle().error("No agent profiles found")
             profiles = [
-                {"name": "default", "context": "Default Agent-Zero AI Assistant"}
+                {"name": "default", "context": "Default Agent-261 AI Assistant"}
             ]
 
         return {"agent_profiles": profiles}
