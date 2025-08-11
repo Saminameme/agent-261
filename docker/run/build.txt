@@ -29,13 +29,13 @@ docker build -t Agent-261-main --build-arg BRANCH=main --build-arg CACHE_DATE=$(
 docker login
 
 # development:
-docker buildx build -t agent0ai/Agent-261:development --platform linux/amd64,linux/arm64 --push --build-arg BRANCH=development --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) .
+docker buildx build -t saminah/Agent-261:development --platform linux/amd64,linux/arm64 --push --build-arg BRANCH=development --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) .
 
 # testing:
-docker buildx build -t agent0ai/Agent-261:testing --platform linux/amd64,linux/arm64 --push --build-arg BRANCH=testing --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) .
+docker buildx build -t saminah/Agent-261:testing --platform linux/amd64,linux/arm64 --push --build-arg BRANCH=testing --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) .
 
 # main
-docker buildx build -t agent0ai/Agent-261:vx.x.x -t agent0ai/Agent-261:latest --platform linux/amd64,linux/arm64 --push --build-arg BRANCH=main --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) .
+docker buildx build -t saminah/Agent-261:vx.x.x -t agent0ai/Agent-261:latest --platform linux/amd64,linux/arm64 --push --build-arg BRANCH=main --build-arg CACHE_DATE=$(date +%Y-%m-%d:%H:%M:%S) .
 
 
 # plain output
